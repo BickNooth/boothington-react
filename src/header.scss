@@ -1,0 +1,22 @@
+header {
+    max-height: 100px;
+    background-color: red;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .brand__logo,
+    .hamburger-menu__icon {
+        flex-basis: 10%;
+        max-width: 40px;
+    }
+
+    .brand__name {
+        max-width: 100px;
+        display: table-caption;
+        padding: 5px;
+    }
+}
