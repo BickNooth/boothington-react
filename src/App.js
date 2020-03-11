@@ -2,7 +2,7 @@ import React from 'react';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faDragon, faBars } from "@fortawesome/free-solid-svg-icons";
 
-import Header from './header'
+import Nav from './Nav'
 import './App.scss';
 
 library.add(
@@ -13,7 +13,9 @@ library.add(
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <header>
+        <Nav />
+      </header>
       <div className="body-content">
         <h1>Content!</h1>
         <p>Here be dragons. Fugiat minim sit reprehenderit ea est.</p>
