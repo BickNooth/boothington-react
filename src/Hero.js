@@ -1,17 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useInput } from './hooks/useInput'
 
 function Hero(){
-    const [searchText, setSearchText] = useState('');
-
-    
+    const { value, bind } = useInput('');
 
     return(
-        <div className='hero--container'>
+        <div className='hero--container' onClick={() => (console.log(value))}>
             <h2>Welcome To</h2>
             <h1>Boothington Borough Council</h1>
             <div>How can we help you today?</div>
             <div className='hero-search--container'>
-                <div className='hero-search__input'></div>
+                <label>Label</label>
+                <input type='text'
+                    name='searchText'
+                    value={value}
+                    {...bind} 
+                />
             </div>
         </div>
     )

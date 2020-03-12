@@ -1,13 +1,15 @@
 import React from 'react';
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faDragon, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faDragon, faBars, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 import Nav from './Nav'
+import Hero from './Hero'
 import './App.scss';
 
 library.add(
     faDragon,
     faBars,
+    faSearch,
   );
 
 function App() {
@@ -17,8 +19,7 @@ function App() {
         <Nav />
       </header>
       <div className="body-content">
-        <h1>Content!</h1>
-        <p>Here be dragons. Fugiat minim sit reprehenderit ea est.</p>
+        <Hero />
       </div>
     </div>
   );
