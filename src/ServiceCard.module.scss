@@ -1,0 +1,21 @@
+.card-container {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    border: 2px solid green;
+    margin-bottom: 0.5em;
+    
+    .icon-holder {
+        grid-column: 1;
+        text-align: center;
+        align-self: center;
+    }
+
+    .cardtext {
+        grid-column: 2;
+    }
+}
+
+.card-container:last-child {
+    background-color: khaki;
+}

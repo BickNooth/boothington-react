@@ -1,11 +1,12 @@
 import React from 'react';
 import { useInput } from './hooks/useInput'
+import styles from './Hero.module.scss'
 
 function Hero(){
     const { value, bind } = useInput('');
 
     return(
-        <div className='hero--container' onClick={() => (console.log(value))}>
+        <div className={styles.hero__container} onClick={() => (console.log(value))}>
             <h2>Welcome To</h2>
             <h1>Boothington Borough Council</h1>
             <div>How can we help you today?</div>

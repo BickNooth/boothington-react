@@ -1,16 +1,28 @@
 import React from 'react';
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faDragon, faBars, faSearch } from "@fortawesome/free-solid-svg-icons";
-
+import { faDragon, faBars, faSearch, faHouseDamage, faDungeon, faHome, faSnowflake } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookSquare, faLinkedin, faTwitterSquare, faYoutubeSquare } from "@fortawesome/free-brands-svg-icons";
 import Nav from './Nav'
 import Hero from './Hero'
 import './App.scss';
+import ServiceCardList from './ServiceCardList';
+import { Footer } from './Footer';
 
 library.add(
-    faDragon,
-    faBars,
-    faSearch,
-  );
+  faDragon,
+  faBars,
+  faSearch,
+  faHouseDamage,
+  faDungeon,
+  faHome,
+  faSnowflake,
+);
+library.add(
+  faFacebookSquare,
+  faLinkedin,
+  faTwitterSquare,
+  faYoutubeSquare,
+);
 
 function App() {
   return (
@@ -18,9 +30,11 @@ function App() {
       <header>
         <Nav />
       </header>
-      <div className="body-content">
+      <main className="body">
         <Hero />
-      </div>
+        <ServiceCardList />
+      </main>
+      <Footer />
     </div>
   );
 }
