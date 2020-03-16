@@ -2,12 +2,13 @@ import React from 'react';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faDragon, faBars, faSearch, faHouseDamage, faDungeon, faHome, faSnowflake } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookSquare, faLinkedin, faTwitterSquare, faYoutubeSquare } from "@fortawesome/free-brands-svg-icons";
-import Nav from './Nav'
+import Header from './Header'
 import Hero from './Hero'
 import './App.scss';
 import ServiceCardList from './ServiceCardList';
 import { Footer } from './Footer';
 
+// Font Awesome Icons
 library.add(
   faDragon,
   faBars,
@@ -17,6 +18,7 @@ library.add(
   faHome,
   faSnowflake,
 );
+// Font Awesome Brands
 library.add(
   faFacebookSquare,
   faLinkedin,
@@ -28,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Nav />
+        <Header />
       </header>
       <main className="body">
         <Hero />

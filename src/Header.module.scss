@@ -1,6 +1,8 @@
+@import './variables';
+
 nav {
     max-height: 100px;
-    background-color: red;
+    background-color: $primary-color;
     color: #ffffff;
     display: flex;
     flex-wrap: nowrap;
@@ -8,13 +10,13 @@ nav {
     justify-content: flex-start;
     align-items: center;
 
-    .brand__logo,
-    .hamburger-menu__icon {
+    .brandLogo,
+    .hamburgerIcon {
         flex-basis: 10%;
         max-width: 40px;
     }
 
-    .brand__name {
+    .brandName {
         max-width: 100px;
         display: table-caption;
         padding: 5px;

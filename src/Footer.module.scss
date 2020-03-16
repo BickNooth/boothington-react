@@ -1,8 +1,25 @@
+@import './variables';
+
 .socials{
-    color: white;
-    background-color: burlywood;
-    
-    .socials__icon{
-        color: lawngreen;
+    color: $contrast-color;
+    background-color: $primary-color;
+    display: flex;
+    flex-flow: row wrap;
+
+    // position: absolute;
+    // bottom: 0px;
+    // width: 100%;
+
+    h3 {
+        flex-basis: 100vw;
+        margin-bottom: 5px;
+    }
+
+    svg {
+        color: $contrast-color;
+        flex-grow: 1;
+        height: auto;
+        max-width: 30px;
+        padding: 0 15px 15px 15px;
     }
 }
